@@ -1,0 +1,10 @@
+version: '3.8'
+
+services:
+  hello:
+    image: demo-hello:v1
+    build: .
+    ports:
+    - 8081:8081
+    environment:
+      - ENV=dev
